@@ -1,8 +1,26 @@
+body {
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+
 .header {
   background-image: url("../images/polygon2.jpg");
-  background-attachment: fixed;
-  font-family: "Montserrat", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 100vh;
+}
+
+/*hamburger menu*/
+.nav-icon {
+  font-size: 2.3em;
+  color: white;
+  left: 2rem;
+  cursor: pointer;
+  top: 50%;
+  position: fixed;
 }
 
 /*fixed social bar 50% from top (middle) */
@@ -34,23 +52,22 @@
 }
 
 .main-text {
-  padding-top: 14em;
+  padding-top: 13em;
 }
 
 .main-text h1 {
   font-weight: 800;
   color: white;
   font-size: 5em;
-  line-height: 1.2em;
 }
 
-.sign{
+.sign {
   color: white;
   border-color: white;
   box-shadow: 0px 2px 10px 0px rgba(0, 255, 212, 0.5);
 }
 
-.sign:hover{
+.sign:hover {
   background-color: white;
   color: black;
 }
@@ -59,9 +76,26 @@
   .icon-bar {
     visibility: hidden;
   }
+  .nav-icon {
+    top: 10%;
+    left: 80%;
+    position: fixed;
+  }
+  .full-about .section-about > div {
+    padding: 0;
+  }
 }
 
+@media (max-width: 540px) {
+  .full-about div .about-description {
+    width: 100%;
+  }
+  .main-text h1 {
+    font-size: 3.5em;
+  }
+}
 
+/*overlay curtain menu effects*/
 
 .overlay {
   height: 100%;
@@ -70,7 +104,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
+  background-color: #2954df;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -87,12 +121,13 @@
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: rgb(206, 200, 200);
   display: block;
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -104,19 +139,79 @@
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
-.nav-icon{
-  font-size: 2.3em;
-  color:white;
-  left: 2rem;
-  cursor: pointer;
-  top: 50%;
-  position: fixed;
+.full-about {
+  height: 100vh;
+}
+
+.section-about {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.about-title {
+  font-size: 7vw;
+  color: blue;
+  font-weight: 800;
+}
+
+.about-description {
+  color: #707070;
+  font-size: 18px;
+  width: 500px;
+  max-width: 100%;
+  margin: 1em 0;
+}
+
+.section-about > div {
+  padding: 0 50px;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.service-section{
+  margin-top: 4em;
+}
+
+.title-row h1::after{
+  display: block;
+  margin-top: 10px;
+  content: '';
+  height: 4px;
+  width: 150px;
+  background-color: blue;
+}
+
+.relative-image {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  transform: translate(-10px, 10px);
+}
+
+.absolute-background {
+  color: #4e32f0;
+  border-width: 10px;
+  border-style: solid;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 95%;
+  height: 80%;
+  z-index: -1;
+  transform: translate(-20px, 20px);
 }

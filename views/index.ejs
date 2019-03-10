@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>InfoWeb</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,30 +27,30 @@
     />
   </head>
   <body>
-    <header class="header">
-      <!--curtain menu-->
-      <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact us</a>
-        </div>
+    <!--curtain menu-->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact us</a>
       </div>
-      <i class="fas fa-bars nav-icon" onclick="openNav()"></i>
-      <!--End curtain menu-->
-      <!--side bar-->
-      <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="google"><i class="fab fa-google"></i></a>
-        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-      </div>
-      <!--End side bar-->
+    </div>
+    <i class="fas fa-bars nav-icon" onclick="openNav()"></i>
+    <!--End curtain menu-->
+    <!--side bar-->
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="google"><i class="fab fa-google"></i></a>
+      <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <!--End side bar-->
+    <div class="header">
       <div class="container text-center main-text">
         <h1>Websites built differently</h1>
         <button
@@ -58,7 +60,56 @@
           More
         </button>
       </div>
-    </header>
+    </div>
+    <div class="full-about">
+      <div
+        class="section-about align-items-center"
+        style="padding: 150px 100px; background-image: url('../images/office.jpg');"
+      >
+        <div>
+          <div class="about-title">About us</div>
+          <p class="about-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+            inventore illum minus, officiis, sed voluptates modi ex labore quam
+            laborum cum cumque a odit error nulla. Ad deleniti debitis eos?
+          </p>
+          <button class="btn btn-outline-primary" style="width: 200px;">
+            Click
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container full-services">
+      <div class="row">
+        <div class="col-md-6 service-section">
+          <div class="title-row">
+            <h1 style="margin: 30px 0;padding-right: 1.3em;">
+              Commited to Excellence
+            </h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Veritatis non vitae recusandae illo. Dolorum hic, id fugiat
+              excepturi nisi incidunt error molestiae recusandae earum! Dolorem
+              deserunt dignissimos magnam id fuga?Dolorum porro doloribus
+              deserunt natus exercitationem obcaecati vel nostrum eum iure
+              eveniet assumenda fugiat veniam animi perspiciatis, eligendi
+              ducimus rerum doloremque blanditiis rem inventore voluptate.
+              Assumenda iste odio aliquid hic.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6" style="padding:0;">
+          <div class="relative-image my-5">
+            <img
+              src="../images/marketing.jpg"
+              alt=""
+              style="width:90%;display: inline-block;"
+            />
+          </div>
+          <div class="absolute-background"></div>
+        </div>
+      </div>
+    </div>
   </body>
   <!--Scripts-->
   <script
