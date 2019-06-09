@@ -5,12 +5,28 @@ body {
   font-family: "Montserrat";
 }
 
+.text-uppercase{
+  text-transform: uppercase
+}
+
+.text-center{
+  text-align: center;
+}
+
+.button{
+  color: #2954df;
+  border-style: solid;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+
 .header {
   background-image: url("../images/polygon2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 /*hamburger menu*/
@@ -36,7 +52,6 @@ body {
 /*social icon bar links */
 .icon-bar a {
   display: block;
-  text-align: center;
   padding: 0.8em;
   transition: all 0.3s ease;
   color: white;
@@ -113,7 +128,6 @@ body {
   position: relative;
   top: 25%;
   width: 100%;
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -214,4 +228,35 @@ body {
   height: 80%;
   z-index: -1;
   transform: translate(-20px, 20px);
+}
+
+.informational h1{
+  margin: 0 0 60px;
+  font-size: 2em;
+}
+
+.informational h1::after{
+  display: block;
+  margin-top: 10px;
+  content: '';
+  height: 4px;
+  width: 120px;
+  background-color: blue;
+  left: 50%;
+  position: absolute;
+  margin-left: -60px;
+}
+
+.wwdo h2{
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.wwdo-p{
+  margin: 2.5em 0;
+  text-align: justify;
+}
+
+.button:hover{
+  background: #1b242f;
 }
